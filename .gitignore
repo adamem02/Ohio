@@ -1,5 +1,15 @@
 .env
-.DS_Store
-node_modules
+# .gitignore
+
+# Ignore node_modules in the root directory
+node_modules/
+
+# Ignore package-lock.json in the root directory
 package-lock.json
 
+# Ignore DS_Store files everywhere
+.DS_Store
+
+# Ignore node_modules and package-lock.json in the 'develop' directory
+develop/node_modules/
+develop/package-lock.json

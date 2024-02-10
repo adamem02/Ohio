@@ -1,13 +1,32 @@
 {
+  "name": "ohio_13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "seed": "node seeds/index.js",
+    "migrate": "sequelize db:migrate",
+    "start-develop": "npm start",
+    "seed-develop": "npm run seed",
+    "migrate-develop": "npx sequelize-cli db:migrate --env=development --config=config/config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
   "dependencies": {
-    "dotenv": "^16.3.2",
-    "mysql2": "^3.7.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
     "sequelize": "^6.36.0",
     "sequelize-cli": "^6.6.2"
-  },
-  "scripts": {
-    "install": "cd develop && npm install",
-    "start": "cd develop && npm start",
-    "seed": "cd develop && npm run seed"
   }
 }

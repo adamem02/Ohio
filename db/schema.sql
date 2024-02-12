@@ -1,11 +1,11 @@
 -- DROP DATABASE
-DROP DATABASE IF EXISTS ecommerce_db;
+DROP DATABASE IF EXISTS my_ecommerce_db;
 
 -- CREATE DATABASE
-CREATE DATABASE ecommerce_db;
+CREATE DATABASE my_ecommerce_db;
 
 -- USE DATABASE
-USE ecommerce_db;
+USE my_ecommerce_db;
 
 -- CREATE TABLES
 CREATE TABLE Category (
